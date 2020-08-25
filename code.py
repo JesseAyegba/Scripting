@@ -1,7 +1,7 @@
 """
 Pre-requisites:
     1) Ensure you have python3 installed on your local computer.
-    2) Install the requests library ------ 'run pip install requests' - for windows
+    2) Install the requests library ------  run 'pip install requests' - for windows
                                                         and
                                             'pip3 install requests' - for mac
 
