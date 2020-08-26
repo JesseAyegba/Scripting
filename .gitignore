@@ -2,6 +2,6 @@
 *.css
 index2.html
 index.html
-main.py
 main2.js
 jquery.js
+*.csv

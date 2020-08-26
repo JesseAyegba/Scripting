@@ -17,11 +17,9 @@ import requests
 import json
 
 
-
 res = requests.get("https://reqres.in/api/users?page=2")
 status = res.status_code
 response = json.loads(res.text)
-
 data_section = response.get("data")
 
 #Error detection decorator
@@ -35,7 +33,6 @@ def error_handler(function):
             print("                        FUNCTION DOCUMENTATION                             ")
             print("---------------------------------------------------------------------------")
             help(function)
-        
     return wrapper
 
 
@@ -58,8 +55,6 @@ def foo(*args, **kwargs):
     print(f"FirstName==>{output.get('first_name')}")
     print(f"LastName==>{output.get('last_name')}")
     print(f"Link==>{output.get('avatar')}")
-
-        
         
 #Test Case
 for item in data_section:
